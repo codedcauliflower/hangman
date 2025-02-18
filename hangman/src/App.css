@@ -1,0 +1,138 @@
+/* General App Styles */
+.App {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, kid-friendly font */
+  background-color: #f0f8ff; /* Light background color */
+  color: #333; /* Dark text for readability */
+  border-radius: 15px; /* Soft rounded corners */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for all buttons */
+button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #141414; /* Tomato red */
+  color: white;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Fun button shadow */
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #ff4500; /* Darker red on hover */
+  transform: translateY(-3px); /* Lift the button up on hover */
+}
+
+button:active {
+  transform: translateY(1px); /* Button clicks down */
+}
+
+/* Word display container */
+.word-display {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+  background-color: #fff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.letter {
+  margin: 0 8px;
+  display: inline-block;
+  width: 40px;
+  height: 50px;
+  background-color: #ffbb8b; /* Light yellow background */
+  margin-top: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+  text-align: center;
+  line-height: 50px;
+}
+
+/* Keyboard button styles */
+.keyboard button {
+  margin: 5px;
+  padding: 12px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  background-color: #f95d2d; /* Bright yellow */
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.keyboard button:hover {
+  background-color: #b34523; /* Darker yellow on hover */
+}
+
+.keyboard button:active {
+  transform: scale(0.95); /* Slightly shrink on click */
+}
+
+/* Result message styling */
+.result {
+  font-size: 2rem;
+  margin-top: 20px;
+  font-weight: bold;
+  color: #ff6347; /* Tomato red */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  animation: bounce 0.5s infinite alternate; /* Bouncing effect */
+}
+
+/* Game container, limiting the width and centering */
+.game-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border: 5px solid #ff6347; /* Fun dashed border */
+}
+
+/* Header styles */
+header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ff6347; /* Tomato red */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Fun shadow effect */
+  margin-bottom: 20px;
+  animation: shake 0.5s ease-in-out infinite alternate; /* Bouncing effect */
+}
+
+/* Help button styling */
+.btn-info {
+  background-color: #00bfff; /* Sky blue */
+  color: white;
+  border-radius: 10px;
+  padding: 12px 20px;
+}
+
+.btn-info:hover {
+  background-color: #1e90ff; /* Blue on hover */
+}
+
+/* Animations for shaking and bouncing */
+@keyframes shake {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-5px); }
+  100% { transform: translateX(5px); }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(10px); }
+}
